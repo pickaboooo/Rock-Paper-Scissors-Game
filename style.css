@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+}
+
+.gameContainer {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 1);
+}
+
+.computerDisplay,
+.playerDisplay {
+  height: 14rem;
+  width: auto;
+}
+
+.display {
+  font-size: 1.5rem;
+  color: #000000;
+}
+
+.scoreDisplay span {
+  margin: 10rem 0.2rem;
+  padding: 0.5rem 0.2rem 0.5rem 0.4rem;
+  border-radius: 5px;
+  text-align: center;
+  word-spacing: -0.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.scoreDisplay .win {
+  background-color: #00FF82;
+}
+
+.scoreDisplay .tie {
+  background-color: #FFD700;
+}
+
+.scoreDisplay .lose {
+  background-color: #FF4B4B;
+}
+
+.btn {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.btn button {
+  border: none;
+  height: 7rem;
+  width: 7rem;
+  background: transparent;
+}
+
+.btn img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.btn #rock:hover {
+  transform: scale(1.4);
+}
+
+.btn #paper:hover {
+  transform: scale(1.4);
+}
+
+.btn #scissors:hover {
+  transform: scale(1.4);
+}
+
+#reset {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #000000;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #FFFFFF;
+  transition: all ease .1s;
+
+}
+
+#reset:active {
+  transform: translate(-3px, 3px);
+}
