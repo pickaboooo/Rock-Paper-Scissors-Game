@@ -4,21 +4,15 @@
   box-sizing: border-box;
 }
 
-html {
-  overflow: hidden;
-}
-
 body {
 
   height: 100vh;
   width: 100vw;
   position: relative;
-  backdrop-filter: blur(10px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: #FFFFFF;
 }
 
 .gameContainer {
@@ -41,7 +35,6 @@ body {
 
 .display {
   font-size: 1.5rem;
-  color: #000000;
 }
 
 .scoreDisplay span {
@@ -110,7 +103,7 @@ body {
   font-size: 1rem;
   font-weight: bold;
   color: #FFFFFF;
-  transition: all ease .1s;
+  transition: transform ease .1s;
 
 }
 
