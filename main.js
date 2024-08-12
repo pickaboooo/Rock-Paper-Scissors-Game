@@ -99,7 +99,7 @@ paper.addEventListener('click', () => {
 
 scissors.addEventListener('click', () => {
   let computerMove = generateMove();
-  playerDisplay.src = "rock.png";
+  playerDisplay.src = "scissors.png";
 
   if (computerMove === 'paper') {
     score.wins++;
